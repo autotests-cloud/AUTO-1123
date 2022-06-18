@@ -19,10 +19,6 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         DriverSettings.configure();
-    }
-
-    @BeforeEach
-    public void beforeEach() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
