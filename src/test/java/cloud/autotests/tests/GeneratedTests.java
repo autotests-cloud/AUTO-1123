@@ -24,7 +24,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Проверка страницы услуг")
     void serviceCheck() {
         step("Open url '" + baseUrl + "'", () ->
-                open(baseUrl));
+                open("https://www.t1-consulting.ru/"));
 
         step("click Услуги", () ->
                 $(byText("Услуги")).click());
@@ -48,7 +48,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Проверка страниц услуг")
     void servicesCheck(String service) {
         step("Open url '" + baseUrl + "'", () ->
-                open(baseUrl));
+                open("https://www.t1-consulting.ru/"));
 
         step("click Услуги", () ->
                 $(byText("Услуги")).click());
@@ -66,7 +66,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page title should have header text")
     void titleTest() {
         step("Open url '" + baseUrl + "'", () ->
-                open(baseUrl));
+                open("https://www.t1-consulting.ru/"));
 
         step("Page title should have text '«Т1 Консалтинг»'", () -> {
             String expectedTitle = "«Т1 Консалтинг»";
@@ -81,7 +81,7 @@ public class GeneratedTests extends TestBase {
     @DisplayName("Page console log should not have errors")
     void consoleShouldNotHaveErrorsTest() {
         step("Open url '" + baseUrl + "'", () ->
-                open(baseUrl));
+                open("https://www.t1-consulting.ru/"));
 
         step("Console logs should not contain text 'SEVERE'", () -> {
             String consoleLogs = DriverUtils.getConsoleLogs();
