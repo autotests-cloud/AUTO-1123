@@ -36,12 +36,6 @@ public class GeneratedTests extends TestBase {
 
     @ParameterizedTest(name = "Проверка страницы услуги {0}")
     @CsvSource(value = {
-            "Фронт",
-            "Миддл",
-            "Бэк",
-            "Импортозамещение",
-            "Цифровые решения",
-            "Аналитика",
             "BigData"
     })
     @Description("Soon to be implemented by you (or QA.GURU engineers)")
