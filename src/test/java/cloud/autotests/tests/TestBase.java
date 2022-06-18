@@ -18,12 +18,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 public class TestBase {
     @BeforeAll
     static void beforeAll() {
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
+        DriverSettings.configure();
     }
 
     @BeforeEach
     public void beforeEach() {
-        DriverSettings.configure();
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
     @AfterEach
